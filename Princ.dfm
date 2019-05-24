@@ -1,6 +1,7 @@
 object FPrinc: TFPrinc
   Left = 716
   Top = 374
+  BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Contador de billetes v1.5'
   ClientHeight = 487
@@ -800,7 +801,7 @@ object FPrinc: TFPrinc
     Top = 8
     Width = 241
     Height = 353
-    Caption = ' Denominaci'#243'n (BsF) '
+    Caption = ' Denominaci'#243'n '
     Color = clMoneyGreen
     Ctl3D = True
     Font.Charset = DEFAULT_CHARSET
@@ -814,12 +815,12 @@ object FPrinc: TFPrinc
     ParentFont = False
     TabOrder = 0
     object Label1: TLabel
-      Left = 14
-      Top = 21
-      Width = 70
+      Left = 42
+      Top = 181
+      Width = 42
       Height = 30
       Alignment = taRightJustify
-      Caption = '20000'
+      Caption = '200'
       Font.Charset = ANSI_CHARSET
       Font.Color = clBlue
       Font.Height = -21
@@ -829,7 +830,7 @@ object FPrinc: TFPrinc
     end
     object Label2: TLabel
       Left = 14
-      Top = 53
+      Top = 21
       Width = 70
       Height = 30
       Alignment = taRightJustify
@@ -843,7 +844,7 @@ object FPrinc: TFPrinc
     end
     object Label3: TLabel
       Left = 28
-      Top = 85
+      Top = 53
       Width = 56
       Height = 30
       Alignment = taRightJustify
@@ -857,7 +858,7 @@ object FPrinc: TFPrinc
     end
     object Label4: TLabel
       Left = 28
-      Top = 117
+      Top = 85
       Width = 56
       Height = 30
       Alignment = taRightJustify
@@ -871,7 +872,7 @@ object FPrinc: TFPrinc
     end
     object Label5: TLabel
       Left = 28
-      Top = 149
+      Top = 117
       Width = 56
       Height = 30
       Alignment = taRightJustify
@@ -885,7 +886,7 @@ object FPrinc: TFPrinc
     end
     object Label6: TLabel
       Left = 42
-      Top = 181
+      Top = 149
       Width = 42
       Height = 30
       Alignment = taRightJustify
@@ -953,172 +954,7 @@ object FPrinc: TFPrinc
       Font.Style = [fsBold]
       ParentFont = False
     end
-    object SE20000: TAdvSpinEdit
-      Left = 92
-      Top = 25
-      Width = 57
-      Height = 26
-      ReturnIsTab = True
-      Value = 0
-      DateValue = 41057.538179606480000000
-      HexValue = 0
-      CheckMinValue = True
-      CheckMaxValue = True
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      IncrementFloat = 0.100000000000000000
-      IncrementFloatPage = 1.000000000000000000
-      LabelFont.Charset = DEFAULT_CHARSET
-      LabelFont.Color = clWindowText
-      LabelFont.Height = -11
-      LabelFont.Name = 'Tahoma'
-      LabelFont.Style = []
-      MaxLength = 3
-      MaxValue = 1000
-      ParentFont = False
-      TabOrder = 0
-      Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
-    end
-    object SE10000: TAdvSpinEdit
-      Left = 92
-      Top = 57
-      Width = 57
-      Height = 26
-      ReturnIsTab = True
-      Value = 0
-      DateValue = 41057.538179606480000000
-      HexValue = 0
-      CheckMinValue = True
-      CheckMaxValue = True
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      IncrementFloat = 0.100000000000000000
-      IncrementFloatPage = 1.000000000000000000
-      LabelFont.Charset = DEFAULT_CHARSET
-      LabelFont.Color = clWindowText
-      LabelFont.Height = -11
-      LabelFont.Name = 'Tahoma'
-      LabelFont.Style = []
-      MaxLength = 3
-      MaxValue = 1000
-      ParentFont = False
-      TabOrder = 1
-      Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
-    end
-    object SE5000: TAdvSpinEdit
-      Left = 92
-      Top = 89
-      Width = 57
-      Height = 26
-      ReturnIsTab = True
-      Value = 0
-      DateValue = 41057.538179606480000000
-      HexValue = 0
-      CheckMinValue = True
-      CheckMaxValue = True
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      IncrementFloat = 0.100000000000000000
-      IncrementFloatPage = 1.000000000000000000
-      LabelFont.Charset = DEFAULT_CHARSET
-      LabelFont.Color = clWindowText
-      LabelFont.Height = -11
-      LabelFont.Name = 'Tahoma'
-      LabelFont.Style = []
-      MaxLength = 3
-      MaxValue = 1000
-      ParentFont = False
-      TabOrder = 2
-      Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
-    end
-    object SE2000: TAdvSpinEdit
-      Left = 92
-      Top = 121
-      Width = 57
-      Height = 26
-      ReturnIsTab = True
-      Value = 0
-      DateValue = 41057.538179606480000000
-      HexValue = 0
-      CheckMinValue = True
-      CheckMaxValue = True
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      IncrementFloat = 0.100000000000000000
-      IncrementFloatPage = 1.000000000000000000
-      LabelFont.Charset = DEFAULT_CHARSET
-      LabelFont.Color = clWindowText
-      LabelFont.Height = -11
-      LabelFont.Name = 'Tahoma'
-      LabelFont.Style = []
-      MaxLength = 3
-      MaxValue = 1000
-      ParentFont = False
-      TabOrder = 3
-      Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
-    end
-    object SE1000: TAdvSpinEdit
-      Left = 92
-      Top = 153
-      Width = 57
-      Height = 26
-      ReturnIsTab = True
-      Value = 0
-      DateValue = 41057.538179606480000000
-      HexValue = 0
-      CheckMinValue = True
-      CheckMaxValue = True
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      IncrementFloat = 0.100000000000000000
-      IncrementFloatPage = 1.000000000000000000
-      LabelFont.Charset = DEFAULT_CHARSET
-      LabelFont.Color = clWindowText
-      LabelFont.Height = -11
-      LabelFont.Name = 'Tahoma'
-      LabelFont.Style = []
-      MaxLength = 3
-      MaxValue = 1000
-      ParentFont = False
-      TabOrder = 4
-      Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
-    end
-    object SE500: TAdvSpinEdit
+    object SE200: TAdvSpinEdit
       Left = 92
       Top = 185
       Width = 57
@@ -1146,14 +982,179 @@ object FPrinc: TFPrinc
       ParentFont = False
       TabOrder = 5
       Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
     end
-    object VETot20000: TJvValidateEdit
-      Left = 157
+    object SE10000: TAdvSpinEdit
+      Left = 92
       Top = 25
+      Width = 57
+      Height = 26
+      ReturnIsTab = True
+      Value = 0
+      DateValue = 41057.538179606480000000
+      HexValue = 0
+      CheckMinValue = True
+      CheckMaxValue = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      IncrementFloat = 0.100000000000000000
+      IncrementFloatPage = 1.000000000000000000
+      LabelFont.Charset = DEFAULT_CHARSET
+      LabelFont.Color = clWindowText
+      LabelFont.Height = -11
+      LabelFont.Name = 'Tahoma'
+      LabelFont.Style = []
+      MaxLength = 3
+      MaxValue = 1000
+      ParentFont = False
+      TabOrder = 0
+      Visible = True
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
+    end
+    object SE5000: TAdvSpinEdit
+      Left = 92
+      Top = 57
+      Width = 57
+      Height = 26
+      ReturnIsTab = True
+      Value = 0
+      DateValue = 41057.538179606480000000
+      HexValue = 0
+      CheckMinValue = True
+      CheckMaxValue = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      IncrementFloat = 0.100000000000000000
+      IncrementFloatPage = 1.000000000000000000
+      LabelFont.Charset = DEFAULT_CHARSET
+      LabelFont.Color = clWindowText
+      LabelFont.Height = -11
+      LabelFont.Name = 'Tahoma'
+      LabelFont.Style = []
+      MaxLength = 3
+      MaxValue = 1000
+      ParentFont = False
+      TabOrder = 1
+      Visible = True
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
+    end
+    object SE2000: TAdvSpinEdit
+      Left = 92
+      Top = 89
+      Width = 57
+      Height = 26
+      ReturnIsTab = True
+      Value = 0
+      DateValue = 41057.538179606480000000
+      HexValue = 0
+      CheckMinValue = True
+      CheckMaxValue = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      IncrementFloat = 0.100000000000000000
+      IncrementFloatPage = 1.000000000000000000
+      LabelFont.Charset = DEFAULT_CHARSET
+      LabelFont.Color = clWindowText
+      LabelFont.Height = -11
+      LabelFont.Name = 'Tahoma'
+      LabelFont.Style = []
+      MaxLength = 3
+      MaxValue = 1000
+      ParentFont = False
+      TabOrder = 2
+      Visible = True
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
+    end
+    object SE1000: TAdvSpinEdit
+      Left = 92
+      Top = 121
+      Width = 57
+      Height = 26
+      ReturnIsTab = True
+      Value = 0
+      DateValue = 41057.538179606480000000
+      HexValue = 0
+      CheckMinValue = True
+      CheckMaxValue = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      IncrementFloat = 0.100000000000000000
+      IncrementFloatPage = 1.000000000000000000
+      LabelFont.Charset = DEFAULT_CHARSET
+      LabelFont.Color = clWindowText
+      LabelFont.Height = -11
+      LabelFont.Name = 'Tahoma'
+      LabelFont.Style = []
+      MaxLength = 3
+      MaxValue = 1000
+      ParentFont = False
+      TabOrder = 3
+      Visible = True
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
+    end
+    object SE500: TAdvSpinEdit
+      Left = 94
+      Top = 153
+      Width = 57
+      Height = 26
+      ReturnIsTab = True
+      Value = 0
+      DateValue = 41057.538179606480000000
+      HexValue = 0
+      CheckMinValue = True
+      CheckMaxValue = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      IncrementFloat = 0.100000000000000000
+      IncrementFloatPage = 1.000000000000000000
+      LabelFont.Charset = DEFAULT_CHARSET
+      LabelFont.Color = clWindowText
+      LabelFont.Height = -11
+      LabelFont.Name = 'Tahoma'
+      LabelFont.Style = []
+      MaxLength = 3
+      MaxValue = 1000
+      ParentFont = False
+      TabOrder = 4
+      Visible = True
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
+    end
+    object VETot200: TJvValidateEdit
+      Left = 157
+      Top = 185
       Width = 74
       Height = 24
       TabStop = False
@@ -1175,7 +1176,7 @@ object FPrinc: TFPrinc
     end
     object VETot10000: TJvValidateEdit
       Left = 157
-      Top = 57
+      Top = 25
       Width = 74
       Height = 24
       TabStop = False
@@ -1196,7 +1197,7 @@ object FPrinc: TFPrinc
     end
     object VETot5000: TJvValidateEdit
       Left = 157
-      Top = 89
+      Top = 57
       Width = 74
       Height = 24
       TabStop = False
@@ -1217,7 +1218,7 @@ object FPrinc: TFPrinc
     end
     object VETot2000: TJvValidateEdit
       Left = 157
-      Top = 121
+      Top = 89
       Width = 74
       Height = 24
       TabStop = False
@@ -1238,7 +1239,7 @@ object FPrinc: TFPrinc
     end
     object VETot1000: TJvValidateEdit
       Left = 157
-      Top = 153
+      Top = 121
       Width = 74
       Height = 24
       TabStop = False
@@ -1259,7 +1260,7 @@ object FPrinc: TFPrinc
     end
     object VETot500: TJvValidateEdit
       Left = 157
-      Top = 185
+      Top = 153
       Width = 74
       Height = 24
       TabStop = False
@@ -1390,10 +1391,10 @@ object FPrinc: TFPrinc
       ParentFont = False
       TabOrder = 9
       Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
     end
     object SE20: TAdvSpinEdit
       Left = 92
@@ -1423,10 +1424,10 @@ object FPrinc: TFPrinc
       ParentFont = False
       TabOrder = 8
       Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
     end
     object SE50: TAdvSpinEdit
       Left = 92
@@ -1456,10 +1457,10 @@ object FPrinc: TFPrinc
       ParentFont = False
       TabOrder = 7
       Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
     end
     object SE100: TAdvSpinEdit
       Left = 92
@@ -1489,10 +1490,10 @@ object FPrinc: TFPrinc
       ParentFont = False
       TabOrder = 6
       Visible = True
-      Version = '1.6.2.1'
-      OnChange = SE20000Change
-      OnEnter = SE20000Enter
-      OnExit = SE20000Change
+      Version = '1.7.0.0'
+      OnChange = SE200Change
+      OnEnter = SE200Enter
+      OnExit = SE200Change
     end
   end
   object GroupBox2: TGroupBox
@@ -1561,8 +1562,8 @@ object FPrinc: TFPrinc
       MaxValue = 500000000.000000000000000000
       ParentFont = False
       TabOrder = 0
-      OnChange = SE20000Change
-      OnExit = SE20000Change
+      OnChange = SE200Change
+      OnExit = SE200Change
     end
     object VEChq: TJvValidateEdit
       Left = 91
@@ -1584,8 +1585,8 @@ object FPrinc: TFPrinc
       MaxValue = 500000000.000000000000000000
       ParentFont = False
       TabOrder = 1
-      OnChange = SE20000Change
-      OnExit = SE20000Change
+      OnChange = SE200Change
+      OnExit = SE200Change
     end
     object VETransf: TJvValidateEdit
       Left = 91
@@ -1607,8 +1608,8 @@ object FPrinc: TFPrinc
       MaxValue = 500000000.000000000000000000
       ParentFont = False
       TabOrder = 2
-      OnChange = SE20000Change
-      OnExit = SE20000Change
+      OnChange = SE200Change
+      OnExit = SE200Change
     end
   end
   object GroupBox3: TGroupBox
@@ -1619,11 +1620,11 @@ object FPrinc: TFPrinc
     Caption = ' Totales '
     TabOrder = 2
     object Label9: TLabel
-      Left = 92
+      Left = 106
       Top = 20
-      Width = 73
+      Width = 46
       Height = 16
-      Caption = 'TOTAL BsF:'
+      Caption = 'TOTAL:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = -13
@@ -1650,6 +1651,7 @@ object FPrinc: TFPrinc
       Width = 203
       Height = 31
       TabStop = False
+      Alignment = taCenter
       Caret.Width = 10
       ClipboardCommands = [caCopy, caClear, caUndo]
       Color = clYellow

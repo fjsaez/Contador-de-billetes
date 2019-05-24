@@ -12,7 +12,7 @@ uses
 type
   TFPrinc = class(TForm)
     GroupBox1: TGroupBox;
-    SE20000: TAdvSpinEdit;
+    SE200: TAdvSpinEdit;
     Label1: TLabel;
     SE10000: TAdvSpinEdit;
     Label2: TLabel;
@@ -38,7 +38,7 @@ type
     BLimpiar: TButton;
     LAcerca: TLabel;
     GIFAnim: TJvGIFAnimator;
-    VETot20000: TJvValidateEdit;
+    VETot200: TJvValidateEdit;
     VETot10000: TJvValidateEdit;
     VETot5000: TJvValidateEdit;
     VETot2000: TJvValidateEdit;
@@ -75,14 +75,14 @@ type
     LinkControlToPropertyVisible: TLinkControlToProperty;
     procedure BSalirClick(Sender: TObject);
     procedure BLimpiarClick(Sender: TObject);
-    procedure SE20000Change(Sender: TObject);
+    procedure SE200Change(Sender: TObject);
     procedure LAcercaMouseEnter(Sender: TObject);
     procedure LAcercaMouseLeave(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure SB1Click(Sender: TObject);
     procedure CheckBoxClick(Sender: TObject);
-    procedure SE20000Enter(Sender: TObject);
+    procedure SE200Enter(Sender: TObject);
   private
     { Private declarations }
     procedure CalcTotal;
@@ -102,22 +102,22 @@ implementation
 procedure TFPrinc.CalcTotal;
 begin
   //se calcula el total de cada denominación:
-  VETot20000.Value:=SE20000.Value*20000;
   VETot10000.Value:=SE10000.Value*10000;
   VETot5000.Value:=SE5000.Value*5000;
   VETot2000.Value:=SE2000.Value*2000;
   VETot1000.Value:=SE1000.Value*1000;
   VETot500.Value:=SE500.Value*500;
+  VETot200.Value:=SE200.Value*200;
   VETot100.Value:=SE100.Value*100;
   VETot50.Value:=SE50.Value*50;
   VETot20.Value:=SE20.Value*20;
   VETot10.Value:=SE10.Value*10;
   //se calcula el total de billetes:
-  VETotBill.Value:=SE20000.Value+SE10000.Value+SE5000.Value+SE2000.Value+
-    SE1000.Value+SE500.Value+SE100.Value+SE50.Value+SE20.Value+SE10.Value;
+  VETotBill.Value:=SE10000.Value+SE5000.Value+SE2000.Value+SE1000.Value+
+    SE500.Value+SE200.Value+SE100.Value+SE50.Value+SE20.Value+SE10.Value;
   //se calcula el total de bsf:
-  VETotBsF.Value:=VETot20000.Value+VETot10000.Value+VETot5000.Value+
-    VETot2000.Value+VETot1000.Value+VETot500.Value+VETot100.Value+VETot50.Value+
+  VETotBsF.Value:=VETot10000.Value+VETot5000.Value+VETot2000.Value+
+    VETot1000.Value+VETot500.Value+VETot200.Value+VETot100.Value+VETot50.Value+
     VETot20.Value+VETot10.Value+VEMon.Value+VEChq.Value+VETransf.Value;
 end;
 
@@ -155,7 +155,8 @@ end;
 
 procedure TFPrinc.FormShow(Sender: TObject);
 begin
-  FormatSettings.CurrencyString:='Bs ';
+  FormatSettings.CurrencyString:='';
+  VETotBsF.Alignment:=taCenter;
   BLimpiar.Click;
 end;
 
@@ -177,36 +178,36 @@ end;
 
 procedure TFPrinc.SB1Click(Sender: TObject);
 begin
-  Tecla(SE20000,Sender);
   Tecla(SE10000,Sender);
   Tecla(SE5000,Sender);
   Tecla(SE2000,Sender);
   Tecla(SE1000,Sender);
   Tecla(SE500,Sender);
+  Tecla(SE200,Sender);
   Tecla(SE100,Sender);
   Tecla(SE50,Sender);
   Tecla(SE20,Sender);
   Tecla(SE10,Sender);
 end;
 
-procedure TFPrinc.SE20000Change(Sender: TObject);
+procedure TFPrinc.SE200Change(Sender: TObject);
 begin
   CalcTotal;
 end;
 
-procedure TFPrinc.SE20000Enter(Sender: TObject);
+procedure TFPrinc.SE200Enter(Sender: TObject);
 begin
   NomCompFoco:=TAdvSpinEdit(Sender).Name;
 end;
 
 procedure TFPrinc.BLimpiarClick(Sender: TObject);
 begin              
-  SE20000.Value:=0;
   SE10000.Value:=0;
   SE5000.Value:=0;
   SE2000.Value:=0;
   SE1000.Value:=0;
   SE500.Value:=0;
+  SE200.Value:=0;
   SE100.Value:=0;
   SE50.Value:=0;
   SE20.Value:=0;
@@ -215,7 +216,7 @@ begin
   VEChq.Value:=0;
   VETransf.Value:=0;
   CalcTotal;
-  SE20000.SetFocus;
+  SE10000.SetFocus;
 end;
 
 procedure TFPrinc.BSalirClick(Sender: TObject);
